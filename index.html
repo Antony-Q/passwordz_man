@@ -24,21 +24,29 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
-        <br class="card-footer">
+        <div class="card-footer">
             <p>Select which criteria to include:</p>
-            <input type="checkbox" id="alpha" value="alpha-char">
-            <label for="alpha-char">Alphabetic characters</label></br>
-            <input type="radio" id="a-lower" value="alpha-lower">
-            <label for="alpha-lower">Lowercase</label>
-            <input type="radio" id="a-upper" value="alpha-upper">
-            <label for="alpha-upper">Uppercase</label>
-            <input type="radio" id="a-both" value="alpha-both">
-            <label for="alpha-both">Both</label></br>
-            <input type="checkbox" id="numeric" value="numeric-char">
-            <label for="numeric-char">Numerals</label></br>
-            <input type="checkbox" id="sp-char" value="special-char">
-            <label for="special-char">Special characters</label></br>
+            <div class="option-btns">
+                <div class="alpha-btns">
+                    <input type="checkbox" id="alpha" value="alpha-char">
+                    <label for="alpha-char">Alphabetic characters</label></br>
+                    <input type="radio" id="a-lower" value="alpha-lower">
+                    <label for="alpha-lower">Lowercase</label></br>
+                    <input type="radio" id="a-upper" value="alpha-upper">
+                    <label for="alpha-upper">Uppercase</label>
+                    <input type="radio" id="a-both" value="alpha-both">
+                    <label for="alpha-both">Both</label></br>
+                </div>
+                <div class="sp-btns">
+                    <input type="checkbox" id="numeric" value="numeric-char">
+                    <label for="numeric-char">Numerals</label></br>
+                    <input type="checkbox" id="sp-char" value="special-char">
+                    <label for="special-char">Special characters</label>
+                </div>
+            </div>
+            <div class="generate-btn">
           <button id="generate" class="btn">Generate Password</button>
+            </div>
         </div>
       </div>
     </div>

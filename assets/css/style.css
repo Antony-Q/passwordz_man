@@ -30,6 +30,10 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+h2 {
+    text-align: center;
+}
+
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -55,12 +59,18 @@ header {
 }
 
 .card-footer {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer p {
+    font-weight: bold;
+    text-align: center;
 }
 
 .card-footer::before {
   content: " ";
-  display: block;
+  display: flex;
   width: 100%;
   background: #e7e9eb;
   height: 2px;
@@ -68,7 +78,7 @@ header {
 
 .card-footer::after {
   content: " ";
-  display: block;
+  display: flex;
   clear: both;
 }
 
@@ -79,13 +89,31 @@ header {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
   color: hsl(0, 0%, 100%);
-  display: inline-block;
+  flex-wrap: wrap;
   font-size: 22px;
   line-height: 22px;
   margin: 16px 16px 16px 20px;
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+}
+
+.option-btns {
+    flex-direction: column;
+    text-align: start;
+    margin: auto;
+}
+
+div.alpha-btns {
+    flex-direction: column;
+}
+div.sp-btns {
+    flex-direction: column;
+    display: inline-block;
+}
+
+.generate-btn {
+    text-align: center;
 }
 
 button[disabled] {
