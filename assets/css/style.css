@@ -99,15 +99,15 @@ h2 {
 }
 
 .option-btns {
-    flex-direction: column;
+    display: inline-block;
     text-align: start;
     margin: auto;
 }
 
-div.alpha-btns {
+.alpha-btns {
     flex-direction: column;
 }
-div.sp-btns {
+.sp-btns {
     flex-direction: column;
     display: inline-block;
 }
